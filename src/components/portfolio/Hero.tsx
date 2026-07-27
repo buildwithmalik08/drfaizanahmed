@@ -102,7 +102,7 @@ export function Hero() {
           </motion.h1>
 
           <motion.p variants={fadeUp} className="mt-4 text-sm md:text-base font-medium tracking-wide text-[color:var(--ink-muted)]">
-            MBBS (Punjab) &nbsp;•&nbsp; R.M.P &nbsp;•&nbsp; FCPS-I
+            MBBS (Punjab) &nbsp;•&nbsp; R.M.P
           </motion.p>
 
           <motion.p
