@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { GraduationCap, BadgeCheck, BookOpenCheck } from "lucide-react";
+import { GraduationCap, BadgeCheck } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
 import { fadeUp, stagger, viewportOnce } from "./motion";
 
@@ -18,13 +18,6 @@ const items = [
     period: "Licensed",
     detail: "Recognised license to practice medicine, upholding the professional and ethical standards of clinical care.",
   },
-  {
-    icon: BookOpenCheck,
-    title: "FCPS-I",
-    institution: "College of Physicians & Surgeons",
-    period: "Qualified",
-    detail: "Foundational postgraduate assessment for the Fellowship of the College of Physicians and Surgeons.",
-  },
 ];
 
 export function Qualifications() {
@@ -42,7 +35,7 @@ export function Qualifications() {
           initial="hidden"
           whileInView="show"
           viewport={viewportOnce}
-          className="mt-14 grid md:grid-cols-3 gap-5"
+          className="mt-14 grid md:grid-cols-2 gap-5 max-w-4xl mx-auto"
         >
           {items.map((it, i) => (
             <motion.article
