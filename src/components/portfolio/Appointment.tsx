@@ -54,7 +54,9 @@ export function Appointment() {
         `${fd.get("message") ?? ""}`,
       ].join("\n"),
     );
-    window.location.href = `mailto:appointments@drfaizanahmed.com?subject=${subject}&body=${body}`;
+    const to = "docfaizanpersonal@gmail.com";
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`;
+    window.open(gmailUrl, "_blank", "noopener,noreferrer");
     setSent(true);
   }
 
