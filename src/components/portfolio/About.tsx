@@ -47,7 +47,6 @@ export function About() {
                   {[
                     "MBBS – Gujranwala Medical College",
                     "Registered Medical Practitioner (R.M.P)",
-                    "FCPS-I qualified",
                     "House Job across 4 major specialties",
                   ].map((t) => (
                     <li key={t} className="flex items-start gap-3">

@@ -20,7 +20,7 @@ const jsonLd = {
   name: "Dr. Faizan Ahmed",
   medicalSpecialty: "General Medicine",
   jobTitle: "Medical Officer",
-  qualifications: "MBBS (Punjab), R.M.P, FCPS-I",
+  qualifications: "MBBS (Punjab), R.M.P",
   alumniOf: { "@type": "CollegeOrUniversity", name: "Gujranwala Medical College" },
   areaServed: "Gujranwala, Pakistan",
 };
@@ -29,11 +29,11 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Dr. Faizan Ahmed — Medical Officer | MBBS, R.M.P, FCPS-I" },
+      { title: "Dr. Faizan Ahmed — Medical Officer | MBBS, R.M.P" },
       {
         name: "description",
         content:
-          "Dr. Faizan Ahmed — Medical Officer (MBBS, R.M.P, FCPS-I). Compassionate, evidence-based, patient-centred healthcare. Book a consultation online.",
+          "Dr. Faizan Ahmed — Medical Officer (MBBS, R.M.P). Compassionate, evidence-based, patient-centred healthcare. Book a consultation online.",
       },
       { property: "og:title", content: "Dr. Faizan Ahmed — Medical Officer" },
       {
