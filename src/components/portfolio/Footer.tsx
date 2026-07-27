@@ -22,7 +22,7 @@ export function Footer() {
             <span className="font-display font-semibold tracking-tight">Dr. Faizan Ahmed</span>
           </a>
           <p className="mt-4 text-sm leading-relaxed text-[color:var(--ink-muted)] max-w-sm">
-            Medical Officer — MBBS (Punjab), R.M.P, FCPS-I. Compassionate,
+            Medical Officer — MBBS (Punjab), R.M.P. Compassionate,
             evidence-based, patient-centred care.
           </p>
         </div>
