@@ -119,6 +119,7 @@ export function Appointment() {
                 </button>
               </div>
             </form>
+            </>
           )}
         </motion.div>
       </div>
