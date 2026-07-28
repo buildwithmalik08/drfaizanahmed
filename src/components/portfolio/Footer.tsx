@@ -50,7 +50,17 @@ export function Footer() {
       <div className="border-t border-[color:var(--line)]">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-[color:var(--ink-muted)]">
           <div>© {new Date().getFullYear()} Dr. Faizan Ahmed. All rights reserved.</div>
-          <div>Designed with excellence.</div>
+          <div>
+          Built & Designed by{" "}
+          <a
+            href="https://www.linkedin.com/in/ecomwithmanan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[color:var(--brand)] hover:underline"
+          >
+            Abdul Manan
+          </a>
+        </div>
         </div>
       </div>
     </footer>
