@@ -41,7 +41,7 @@ export function Footer() {
         <div>
           <div className="text-[11px] uppercase tracking-widest text-[color:var(--ink-muted)]">Contact</div>
           <ul className="mt-4 space-y-2 text-sm">
-            <li className="text-[color:var(--ink)]/80">+92 306 3753466</li>
+            <li className="text-[color:var(--ink)]/80">+92 342 6078804</li>
             <li className="text-[color:var(--ink)]/80">docfaizanpersonal@gmail.com</li>
             <li className="text-[color:var(--ink)]/80">Gujranwala, Punjab, Pakistan</li>
           </ul>

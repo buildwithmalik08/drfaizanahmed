@@ -4,13 +4,13 @@ import { SectionHeader } from "./SectionHeader";
 import { fadeUp, stagger, viewportOnce } from "./motion";
 
 const items = [
-  { icon: Phone, label: "Phone", value: "+92 306 3753466", href: "tel:+923063753466" },
+  { icon: Phone, label: "Phone", value: "+92 342 6078804", href: "tel:+923426078804" },
   { icon: Mail, label: "Email", value: "docfaizanpersonal@gmail.com", href: "mailto:docfaizanpersonal@gmail.com" },
   { icon: MapPin, label: "Clinic", value: "Gujranwala, Punjab, Pakistan", href: "#map" },
 ];
 
 const socials = [
-  { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/923063753466" },
+  { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/923426078804" },
   { icon: Facebook, label: "Facebook", href: "#" },
   { icon: Instagram, label: "Instagram", href: "#" },
   { icon: Linkedin, label: "LinkedIn", href: "#" },
