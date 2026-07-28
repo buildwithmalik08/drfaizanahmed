@@ -116,27 +116,29 @@ export function Hero() {
           </motion.p>
 
           <motion.div variants={fadeUp} className="mt-8 flex flex-wrap gap-3">
-            <a
-              href="#appointment"
-              className="group inline-flex items-center gap-2 rounded-full bg-[color:var(--brand)] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_14px_40px_-14px_rgba(46,125,50,0.7)] hover:shadow-[0_18px_50px_-14px_rgba(46,125,50,0.8)] hover:-translate-y-0.5 transition-all"
-            >
-              Book Appointment
-              <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
-            </a>
-            <a
-              href="https://wa.me/923426078804"
-              target="_blank"
-              rel="noreferrer"
-              className="group inline-flex items-center gap-2 rounded-full border border-[color:var(--line)] bg-white/70 backdrop-blur px-6 py-3.5 text-sm font-semibold text-[color:var(--ink)] hover:bg-white hover:border-[color:var(--brand)]/30 hover:-translate-y-0.5 transition-all"
-            >
-              <MessageCircle size={16} className="text-[color:var(--brand)]" />
-              WhatsApp Consultation
-            </a>
+            <div className="flex flex-col items-center gap-1">
+              <a
+                href="#appointment"
+                className="group inline-flex items-center gap-2 rounded-full bg-[color:var(--brand)] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_14px_40px_-14px_rgba(46,125,50,0.7)] hover:shadow-[0_18px_50px_-14px_rgba(46,125,50,0.8)] hover:-translate-y-0.5 transition-all"
+              >
+                Book Appointment
+                <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
+              </a>
+              <FeeLabel />
+            </div>
+            <div className="flex flex-col items-center gap-1">
+              <a
+                href="https://wa.me/923426078804"
+                target="_blank"
+                rel="noreferrer"
+                className="group inline-flex items-center gap-2 rounded-full border border-[color:var(--line)] bg-white/70 backdrop-blur px-6 py-3.5 text-sm font-semibold text-[color:var(--ink)] hover:bg-white hover:border-[color:var(--brand)]/30 hover:-translate-y-0.5 transition-all"
+              >
+                <MessageCircle size={16} className="text-[color:var(--brand)]" />
+                WhatsApp Consultation
+              </a>
+              <FeeLabel />
+            </div>
           </motion.div>
-
-          <motion.p variants={fadeUp} className="mt-2.5 text-center text-sm text-[color:var(--ink-muted)]">
-            Consultation Fee: <span className="font-semibold text-[color:var(--ink)]">PKR 500</span>
-          </motion.p>
 
           <motion.div
             variants={fadeRight}
