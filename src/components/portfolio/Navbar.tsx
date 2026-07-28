@@ -54,7 +54,7 @@ export function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto max-w-7xl px-5 sm:px-8 h-16 md:h-20 flex items-center justify-between">
+      <nav className="mx-auto max-w-7xl px-5 sm:px-8 h-20 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-2.5 group" aria-label="Dr. Faizan Ahmed home">
           <span className="relative inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-[color:var(--brand)] to-[color:var(--brand-2)] text-white shadow-[0_8px_24px_-8px_rgba(46,125,50,0.55)] transition-transform group-hover:scale-105">
             <Stethoscope className="h-4.5 w-4.5" strokeWidth={2.4} size={18} />
@@ -92,13 +92,17 @@ export function Navbar() {
         <div className="flex items-center gap-2">
           <a
             href="#appointment"
-            className="hidden sm:inline-flex items-center gap-2 rounded-full bg-[color:var(--brand)] px-5 py-2.5 text-[13px] font-semibold text-white shadow-[0_10px_30px_-10px_rgba(46,125,50,0.6)] hover:bg-[color:var(--brand)]/92 hover:shadow-[0_14px_36px_-10px_rgba(46,125,50,0.7)] transition-all"
+            className="inline-flex items-center gap-2 rounded-full bg-[color:var(--brand)] px-4 py-2 sm:px-5 sm:py-2.5 text-[12.5px] sm:text-[13px] font-semibold text-white shadow-[0_10px_30px_-10px_rgba(46,125,50,0.6)] hover:bg-[color:var(--brand)]/92 hover:shadow-[0_14px_36px_-10px_rgba(46,125,50,0.7)] transition-all whitespace-nowrap"
           >
             Book Appointment
           </a>
           <button
             onClick={() => setOpen((v) => !v)}
-            className="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-full border border-[color:var(--line)] bg-white/80 backdrop-blur"
+            className={`lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-full transition-colors ${
+              scrolled
+                ? "border border-[color:var(--line)] bg-white/60 text-[color:var(--ink)]"
+                : "border border-transparent bg-transparent text-[color:var(--ink)]"
+            }`}
             aria-label="Toggle menu"
           >
             {open ? <X size={18} /> : <Menu size={18} />}
