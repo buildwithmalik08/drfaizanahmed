@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle, Award, Sparkles } from "lucide-react";
-import doctorImg from "@/assets/dr_faizan_pro.png";
+import doctorAsset from "@/assets/dr_faizan_pro.png.asset.json";
 import { fadeUp, fadeRight, stagger } from "./motion";
 
 const stats = [
@@ -39,7 +39,7 @@ export function Hero() {
             <div className="absolute inset-x-10 bottom-0 h-2/3 rounded-[2rem] border border-[color:var(--brand)]/10" />
 
             <img
-              src={doctorImg}
+              src={doctorAsset.url}
               alt="Portrait of Dr. Faizan Ahmed, MBBS"
               className="relative z-10 w-full h-auto rounded-[2rem] object-cover drop-shadow-[0_40px_50px_rgba(17,24,39,0.22)]"
               loading="eager"
@@ -123,7 +123,7 @@ export function Hero() {
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
             </a>
             <a
-              href="https://wa.me/923063753466"
+              href="https://wa.me/923426078804"
               target="_blank"
               rel="noreferrer"
               className="group inline-flex items-center gap-2 rounded-full border border-[color:var(--line)] bg-white/70 backdrop-blur px-6 py-3.5 text-sm font-semibold text-[color:var(--ink)] hover:bg-white hover:border-[color:var(--brand)]/30 hover:-translate-y-0.5 transition-all"
