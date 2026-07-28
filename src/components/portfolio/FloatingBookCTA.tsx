@@ -42,23 +42,29 @@ export function FloatingBookCTA() {
           className="lg:hidden fixed z-40 left-1/2 -translate-x-1/2 bottom-5 flex items-center gap-2"
           style={{ paddingBottom: "env(safe-area-inset-bottom, 0px)" }}
         >
-          <a
-            href="#appointment"
-            className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-[color:var(--brand)] px-4 py-3 text-[13px] font-semibold text-white shadow-[0_18px_50px_-12px_rgba(46,125,50,0.7)] active:scale-[0.98]"
-          >
-            <Calendar size={15} />
-            Book Appointment
-          </a>
-          <a
-            href="https://wa.me/923426078804"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="WhatsApp Consultation"
-            className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-white border border-[color:var(--line)] px-4 py-3 text-[13px] font-semibold text-[color:var(--ink)] shadow-[0_18px_50px_-12px_rgba(17,24,39,0.25)] active:scale-[0.98]"
-          >
-            <MessageCircle size={15} className="text-[color:var(--brand)]" />
-            WhatsApp Consultation
-          </a>
+          <div className="flex flex-col items-center gap-0.5">
+            <a
+              href="#appointment"
+              className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-[color:var(--brand)] px-4 py-3 text-[13px] font-semibold text-white shadow-[0_18px_50px_-12px_rgba(46,125,50,0.7)] active:scale-[0.98]"
+            >
+              <Calendar size={15} />
+              Book Appointment
+            </a>
+            <FeeLabel compact />
+          </div>
+          <div className="flex flex-col items-center gap-0.5">
+            <a
+              href="https://wa.me/923426078804"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="WhatsApp Consultation"
+              className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-white border border-[color:var(--line)] px-4 py-3 text-[13px] font-semibold text-[color:var(--ink)] shadow-[0_18px_50px_-12px_rgba(17,24,39,0.25)] active:scale-[0.98]"
+            >
+              <MessageCircle size={15} className="text-[color:var(--brand)]" />
+              WhatsApp Consultation
+            </a>
+            <FeeLabel compact />
+          </div>
         </motion.div>
       )}
     </AnimatePresence>

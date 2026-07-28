@@ -39,22 +39,28 @@ export function CTA() {
               evidence-based advice, an honest opinion and a plan that fits you.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href="#appointment"
-                className="group inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-[color:var(--brand)] shadow-[0_16px_40px_-16px_rgba(0,0,0,0.4)] hover:-translate-y-0.5 transition"
-              >
-                Book Appointment
-                <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
-              </a>
-              <a
-                href="https://wa.me/923426078804"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/5 backdrop-blur px-6 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition"
-              >
-                <MessageCircle size={16} />
-                WhatsApp Consultation
-              </a>
+              <div className="flex flex-col items-center gap-1">
+                <a
+                  href="#appointment"
+                  className="group inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-[color:var(--brand)] shadow-[0_16px_40px_-16px_rgba(0,0,0,0.4)] hover:-translate-y-0.5 transition"
+                >
+                  Book Appointment
+                  <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
+                </a>
+                <FeeLabel dark />
+              </div>
+              <div className="flex flex-col items-center gap-1">
+                <a
+                  href="https://wa.me/923426078804"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/5 backdrop-blur px-6 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition"
+                >
+                  <MessageCircle size={16} />
+                  WhatsApp Consultation
+                </a>
+                <FeeLabel dark />
+              </div>
             </div>
           </div>
         </motion.div>

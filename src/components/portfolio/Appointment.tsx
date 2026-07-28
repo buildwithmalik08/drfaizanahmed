@@ -111,13 +111,16 @@ export function Appointment() {
                 <p className="text-xs text-[color:var(--ink-muted)] max-w-md">
                   Submitting prepares an email request — appointments are confirmed once reviewed. For urgent matters, please contact via WhatsApp.
                 </p>
-                <button
-                  type="submit"
-                  className="group inline-flex items-center gap-2 rounded-full bg-[color:var(--brand)] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_14px_40px_-14px_rgba(46,125,50,0.7)] hover:-translate-y-0.5 transition-all"
-                >
-                  Request Appointment
-                  <Send size={15} className="transition-transform group-hover:translate-x-0.5" />
-                </button>
+                <div className="flex flex-col items-center gap-1">
+                  <button
+                    type="submit"
+                    className="group inline-flex items-center gap-2 rounded-full bg-[color:var(--brand)] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_14px_40px_-14px_rgba(46,125,50,0.7)] hover:-translate-y-0.5 transition-all"
+                  >
+                    Request Appointment
+                    <Send size={15} className="transition-transform group-hover:translate-x-0.5" />
+                  </button>
+                  <FeeLabel />
+                </div>
               </div>
             </form>
             </>
