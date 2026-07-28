@@ -4,9 +4,27 @@ import { SectionHeader } from "./SectionHeader";
 import { fadeUp, stagger, viewportOnce } from "./motion";
 
 const items = [
-  { icon: Phone, label: "Phone", value: "+92 342 6078804", href: "tel:+923426078804" },
-  { icon: Mail, label: "Email", value: "docfaizanpersonal@gmail.com", href: "mailto:docfaizanpersonal@gmail.com" },
-  { icon: MapPin, label: "Clinic", value: "Gujranwala, Punjab, Pakistan", href: "#map" },
+  {
+    icon: Phone,
+    label: "Phone / WhatsApp",
+    value: "+92 342 6078804",
+    href: "https://wa.me/923426078804",
+    external: true,
+  },
+  {
+    icon: Mail,
+    label: "Email",
+    value: "docfaizanpersonal@gmail.com",
+    href: "mailto:docfaizanpersonal@gmail.com",
+    external: false,
+  },
+  {
+    icon: MapPin,
+    label: "Clinic",
+    value: "Gujranwala, Punjab, Pakistan",
+    href: "#map",
+    external: false,
+  },
 ];
 
 const socials = [
@@ -38,6 +56,8 @@ export function Contact() {
               <motion.a
                 key={it.label}
                 href={it.href}
+                target={it.external ? "_blank" : undefined}
+                rel={it.external ? "noreferrer" : undefined}
                 variants={fadeUp}
                 whileHover={{ y: -3 }}
                 className="flex items-center gap-4 rounded-2xl border border-[color:var(--line)] bg-[color:var(--surface)] p-5 hover:border-[color:var(--brand)]/30 hover:bg-white transition-all"
