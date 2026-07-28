@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Calendar, MessageCircle } from "lucide-react";
+import { FeeLabel } from "./FeeLabel";
 
 export function FloatingBookCTA() {
   const [visible, setVisible] = useState(false);

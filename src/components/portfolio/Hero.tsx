@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle, Award, Sparkles } from "lucide-react";
 import doctorAsset from "@/assets/dr_faizan_pro.png.asset.json";
 import { fadeUp, fadeRight, stagger } from "./motion";
+import { FeeLabel } from "./FeeLabel";
 
 const stats = [
   { value: "1+", label: "Years", sub: "Clinical Experience" },

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Stethoscope } from "lucide-react";
+import { FeeLabel } from "./FeeLabel";
 
 const links = [
   { href: "#home", label: "Home" },

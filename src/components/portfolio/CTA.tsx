@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle } from "lucide-react";
 import { fadeUp, viewportOnce } from "./motion";
+import { FeeLabel } from "./FeeLabel";
 
 export function CTA() {
   return (

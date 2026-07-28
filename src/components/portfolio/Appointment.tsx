@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Calendar, Clock, Mail, MessageSquare, Phone, User, Stethoscope, Send, CheckCircle2 } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
 import { fadeUp, viewportOnce } from "./motion";
+import { FeeLabel } from "./FeeLabel";
 
 const inputBase =
   "peer w-full rounded-xl border border-[color:var(--line)] bg-white/70 px-4 pt-5 pb-2 text-sm text-[color:var(--ink)] placeholder-transparent focus:outline-none focus:border-[color:var(--brand)] focus:ring-4 focus:ring-[color:var(--brand)]/10 transition";
