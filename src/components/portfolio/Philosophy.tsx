@@ -33,7 +33,7 @@ export function Philosophy() {
             </h2>
             <p className="mt-4 text-[15.5px] leading-relaxed text-[color:var(--ink-muted)]">
               A steady framework of values that shapes how I listen, diagnose,
-              treat, and follow up with every patient I meet.
+              treat and follow up with every patient I meet.
             </p>
           </motion.div>
 

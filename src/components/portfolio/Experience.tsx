@@ -9,28 +9,28 @@ const rotations = [
     dept: "Orthopaedics & Trauma",
     hospital: "Gujranwala Teaching Hospital",
     period: "House Officer",
-    detail: "Managed fracture care, trauma assessments, plaster application, and pre/post-operative orthopaedic patients.",
+    detail: "Managed fracture care, trauma assessments, plaster application and pre/post-operative orthopaedic patients.",
   },
   {
     icon: Scissors,
     dept: "General Surgery",
     hospital: "Gujranwala Teaching Hospital",
     period: "House Officer",
-    detail: "Assisted in elective and emergency surgeries, wound management, suturing, and surgical ward rounds.",
+    detail: "Assisted in elective and emergency surgeries, wound management, suturing and surgical ward rounds.",
   },
   {
     icon: Stethoscope,
     dept: "General Medicine",
     hospital: "Gujranwala Teaching Hospital",
     period: "House Officer",
-    detail: "Diagnosed and managed acute and chronic medical conditions across cardiology, pulmonology, and endocrine cases.",
+    detail: "Diagnosed and managed acute and chronic medical conditions across cardiology, pulmonology and endocrine cases.",
   },
   {
     icon: Baby,
     dept: "Paediatric Medicine",
     hospital: "Children Complex Gujranwala",
     period: "House Officer",
-    detail: "Provided compassionate care to paediatric patients, neonatal monitoring, and communication with anxious families.",
+    detail: "Provided compassionate care to paediatric patients, neonatal monitoring and communication with anxious families.",
   },
 ];
 
@@ -41,7 +41,7 @@ export function Experience() {
         <SectionHeader
           eyebrow="Experience"
           title={<>House Job across <span className="text-gradient-brand">four core specialties</span>.</>}
-          description="A structured rotation-based clinical foundation spanning surgical, medical, paediatric, and trauma care."
+          description="A structured rotation-based clinical foundation spanning surgical, medical, paediatric and trauma care."
         />
 
         <motion.div

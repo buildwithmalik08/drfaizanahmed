@@ -19,7 +19,7 @@ export function About() {
         <SectionHeader
           eyebrow="About Me"
           title={<>A modern doctor with a <span className="text-gradient-brand">timeless duty of care</span>.</>}
-          description="MBBS graduate practising clinical medicine with discipline, empathy, and a commitment to evidence-based decision making at every step of the patient journey."
+          description="MBBS graduate practising clinical medicine with discipline, empathy and a commitment to evidence-based decision making at every step of the patient journey."
         />
 
         <div className="mt-14 grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
@@ -78,7 +78,7 @@ export function About() {
             <p className="mt-4 text-[15.5px] leading-[1.75] text-[color:var(--ink)]/75">
               As a Medical Officer, I combine rigorous clinical reasoning with a genuinely
               patient-centred approach. From triaging emergencies to managing long-term care plans,
-              every interaction is guided by empathy, sound judgement, and adherence to the latest
+              every interaction is guided by empathy, sound judgement and adherence to the latest
               evidence-based guidelines.
             </p>
             <p className="mt-4 text-[15.5px] leading-[1.75] text-[color:var(--ink)]/75">

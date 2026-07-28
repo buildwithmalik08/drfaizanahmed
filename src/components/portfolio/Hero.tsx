@@ -110,8 +110,8 @@ export function Hero() {
             className="mt-6 max-w-xl text-[15.5px] md:text-[17px] leading-[1.7] text-[color:var(--ink)]/75"
           >
             Dedicated Medical Officer committed to delivering compassionate,
-            evidence-based, and patient-centred healthcare through clinical
-            excellence, professionalism, and continuous learning.
+            evidence-based and patient-centred healthcare through clinical
+            excellence, professionalism and continuous learning.
           </motion.p>
 
           <motion.div variants={fadeUp} className="mt-8 flex flex-wrap gap-3">

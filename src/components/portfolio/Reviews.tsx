@@ -7,7 +7,7 @@ const reviews = [
   { name: "Ayesha K.", role: "Patient", text: "Dr. Faizan listened carefully, explained everything in simple language and made me feel genuinely cared for. Highly recommend." },
   { name: "Bilal R.", role: "Patient's Family", text: "Compassionate, calm and professional. He handled our father's emergency admission with clarity and kindness." },
   { name: "Dr. Nadia M.", role: "Colleague", text: "A meticulous doctor with strong clinical reasoning. Reliable in every rotation we worked together." },
-  { name: "Hamza S.", role: "Patient", text: "Thorough examination, patient answers to every question, and a treatment plan I actually understood. Rare experience." },
+  { name: "Hamza S.", role: "Patient", text: "Thorough examination, patient answers to every question and a treatment plan I actually understood. Rare experience." },
   { name: "Sana T.", role: "Patient's Mother", text: "He treated my son with such gentleness. You can tell he genuinely cares about paediatric patients." },
   { name: "Umair A.", role: "Patient", text: "Prompt, evidence-based advice. Follow-up was smooth and reassuring — exactly what patients need." },
 ];
