@@ -9,7 +9,7 @@ const items = [
     title: "MBBS",
     institution: "Gujranwala Medical College",
     period: "Nov 2019 — March 2025",
-    detail: "Five-year rigorous medical program covering foundational sciences, clinical rotations, and community medicine.",
+    detail: "Five-year rigorous medical program covering foundational sciences, clinical rotations and community medicine.",
   },
   {
     icon: BadgeCheck,
