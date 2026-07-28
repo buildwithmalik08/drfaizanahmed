@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Calendar } from "lucide-react";
+import { Calendar, MessageCircle } from "lucide-react";
 
 export function FloatingBookCTA() {
   const [visible, setVisible] = useState(false);
@@ -32,19 +32,33 @@ export function FloatingBookCTA() {
   return (
     <AnimatePresence>
       {visible && (
-        <motion.a
-          key="floating-book"
-          href="#appointment"
+        <motion.div
+          key="floating-cta"
           initial={{ opacity: 0, y: 24, scale: 0.95 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 24, scale: 0.95 }}
           transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-          className="lg:hidden fixed z-40 left-1/2 -translate-x-1/2 bottom-5 inline-flex items-center gap-2 rounded-full bg-[color:var(--brand)] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_18px_50px_-12px_rgba(46,125,50,0.7)] active:scale-[0.98]"
-          style={{ paddingBottom: "calc(0.875rem + env(safe-area-inset-bottom, 0px))" }}
+          className="lg:hidden fixed z-40 left-1/2 -translate-x-1/2 bottom-5 flex items-center gap-2"
+          style={{ paddingBottom: "env(safe-area-inset-bottom, 0px)" }}
         >
-          <Calendar size={16} />
-          Book Consultation
-        </motion.a>
+          <a
+            href="#appointment"
+            className="inline-flex items-center gap-2 rounded-full bg-[color:var(--brand)] px-5 py-3.5 text-sm font-semibold text-white shadow-[0_18px_50px_-12px_rgba(46,125,50,0.7)] active:scale-[0.98]"
+          >
+            <Calendar size={16} />
+            Book Appointment
+          </a>
+          <a
+            href="https://wa.me/923426078804"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="WhatsApp Consultation"
+            className="inline-flex items-center gap-2 rounded-full bg-white border border-[color:var(--line)] px-5 py-3.5 text-sm font-semibold text-[color:var(--ink)] shadow-[0_18px_50px_-12px_rgba(17,24,39,0.25)] active:scale-[0.98]"
+          >
+            <MessageCircle size={16} className="text-[color:var(--brand)]" />
+            WhatsApp
+          </a>
+        </motion.div>
       )}
     </AnimatePresence>
   );
