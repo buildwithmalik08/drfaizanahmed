@@ -13,6 +13,7 @@ import { CTA } from "@/components/portfolio/CTA";
 import { Appointment } from "@/components/portfolio/Appointment";
 import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
+import { FloatingBookCTA } from "@/components/portfolio/FloatingBookCTA";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -75,6 +76,7 @@ function Index() {
         <Contact />
       </main>
       <Footer />
+      <FloatingBookCTA />
     </div>
   );
 }
