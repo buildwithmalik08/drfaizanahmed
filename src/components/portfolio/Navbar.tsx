@@ -92,7 +92,7 @@ export function Navbar() {
         <div className="flex items-center gap-2">
           <a
             href="#appointment"
-            className="inline-flex items-center gap-2 rounded-full bg-[color:var(--brand)] px-4 py-2 sm:px-5 sm:py-2.5 text-[12.5px] sm:text-[13px] font-semibold text-white shadow-[0_10px_30px_-10px_rgba(46,125,50,0.6)] hover:bg-[color:var(--brand)]/92 hover:shadow-[0_14px_36px_-10px_rgba(46,125,50,0.7)] transition-all whitespace-nowrap"
+            className="hidden lg:inline-flex items-center gap-2 rounded-full bg-[color:var(--brand)] px-5 py-2.5 text-[13px] font-semibold text-white shadow-[0_10px_30px_-10px_rgba(46,125,50,0.6)] hover:bg-[color:var(--brand)]/92 hover:shadow-[0_14px_36px_-10px_rgba(46,125,50,0.7)] transition-all whitespace-nowrap"
           >
             Book Appointment
           </a>
