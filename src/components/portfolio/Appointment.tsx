@@ -37,30 +37,39 @@ function Field({
 
 export function Appointment() {
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  function onSubmit(e: FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const fd = new FormData(e.currentTarget);
-    const subject = encodeURIComponent(`Appointment Request — ${fd.get("name") ?? ""}`);
-    const body = encodeURIComponent(
-      [
-        `Name: ${fd.get("name")}`,
-        `Phone: ${fd.get("phone")}`,
-        `Email: ${fd.get("email")}`,
-        `Preferred Date: ${fd.get("date")}`,
-        `Preferred Time: ${fd.get("time")}`,
-        `Reason: ${fd.get("reason")}`,
-        "",
-        `Message:`,
-        `${fd.get("message") ?? ""}`,
-      ].join("\n"),
-    );
-    const to = "docfaizanpersonal@gmail.com";
-    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`;
-    window.open(gmailUrl, "_blank", "noopener,noreferrer");
-    setSent(true);
-  }
 
+    setLoading(true);
+    
+    const form = e.currentTarget;
+    const fd = new FormData(form);
+    fd.append("access_key", "f4524c4e-2c4d-4da5-be18-6643f5919841");
+fd.append("subject", "New Appointment Request - Dr. Faizan Ahmed");
+fd.append("from_name", "Care with Dr. Faizan Website");
+
+try {
+  const response = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    body: fd,
+  });
+
+  const result = await response.json();
+
+  if (result.success) {
+    form.reset();
+    setSent(true);
+  } else {
+    alert("Failed to send appointment request. Please try again.");
+  }
+} catch (error) {
+  alert("Something went wrong. Please try again.");
+} finally {
+  setLoading(false);
+}
+  }
   return (
     <section id="appointment" className="relative py-20 md:py-28">
       <div className="pointer-events-none absolute inset-0 -z-10">
@@ -89,7 +98,7 @@ export function Appointment() {
               </span>
               <h3 className="mt-4 text-2xl font-semibold text-[color:var(--ink)]">Request prepared</h3>
               <p className="mt-2 text-sm text-[color:var(--ink-muted)] max-w-md mx-auto">
-                Your email client should have opened with your request. Once sent, we'll confirm your appointment shortly.
+                Your appointment request has been submitted successfully. Dr. Faizan Ahmed will contact you shortly.
               </p>
             </div>
           ) : (
@@ -114,9 +123,10 @@ export function Appointment() {
                 <div className="flex flex-col items-center gap-1">
                   <button
                     type="submit"
-                    className="group inline-flex items-center gap-2 rounded-full bg-[color:var(--brand)] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_14px_40px_-14px_rgba(46,125,50,0.7)] hover:-translate-y-0.5 transition-all"
+                    disabled={loading}
+                    className="group inline-flex items-center gap-2 rounded-full bg-[color:var(--brand)] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_14px_40px_-14px_rgba(46,125,50,0.7)] hover:-translate-y-0.5 transition-all disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    Request Appointment
+                    {loading ? "Sending..." : "Request Appointment"}
                     <Send size={15} className="transition-transform group-hover:translate-x-0.5" />
                   </button>
                   <FeeLabel />
