@@ -133,6 +133,10 @@ export function Hero() {
             </a>
           </motion.div>
 
+          <motion.p variants={fadeUp} className="mt-2.5 text-center text-sm text-[color:var(--ink-muted)]">
+            Consultation Fee: <span className="font-semibold text-[color:var(--ink)]">PKR 500</span>
+          </motion.p>
+
           <motion.div
             variants={fadeRight}
             className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 max-w-2xl"

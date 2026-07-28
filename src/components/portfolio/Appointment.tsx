@@ -92,7 +92,11 @@ export function Appointment() {
               </p>
             </div>
           ) : (
-            <form onSubmit={onSubmit} className="grid md:grid-cols-2 gap-4">
+            <>
+              <p className="mb-5 text-center text-sm text-[color:var(--ink-muted)]">
+                Consultation Fee: <span className="font-semibold text-[color:var(--ink)]">PKR 500</span>
+              </p>
+              <form onSubmit={onSubmit} className="grid md:grid-cols-2 gap-4">
               <Field id="name" label="Full Name" icon={User} required />
               <Field id="phone" label="Phone Number" type="tel" icon={Phone} required />
               <Field id="email" label="Email Address" type="email" icon={Mail} required />
