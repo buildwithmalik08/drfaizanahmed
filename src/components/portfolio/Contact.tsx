@@ -29,8 +29,8 @@ const items = [
 
 const socials = [
   { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/923426078804" },
-  { icon: Facebook, label: "Facebook", href: "#" },
-  { icon: Instagram, label: "Instagram", href: "#" },
+  { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/carewithdrfaizan" },
+  { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/carewithdrfaizan" },
   { icon: Linkedin, label: "LinkedIn", href: "#" },
 ];
 
